@@ -1,0 +1,1695 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Lato', sans-serif
+
+html, body
+  height: 100%
+
+.cont
+  min-height: 100%
+
+.clr
+  height: 975px
+
+.footer
+  margin-top: -975px
+
+/*-------header------------------*/
+
+.header
+  height: 100px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  border: 1px solid #ececec
+  background-color: #ffffff
+
+.container
+  width: 1140px
+  margin: 0 auto
+
+.header__content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100%
+
+.header__left
+  display: flex
+  align-items: center
+
+.logo
+  display: flex
+  align-items: center
+  color: #222222
+  font-size: 27px
+  font-weight: 300
+  line-height: 32px
+  text-transform: uppercase
+  text-decoration: none
+  letter-spacing: 0.68px
+
+.browse__through
+  outline: none
+  border-radius: 3px 0 0 3px
+  border: 1px solid #e6e6e6
+  background-color: #cdcdcc
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+  color: #222222
+  font-size: 14px
+  font-weight: 300
+  line-height: 38px
+  letter-spacing: 0.35px
+  text-decoration: none
+  display: block
+  width: 87px
+  height: 38px
+  padding-left: 4px
+  position: relative
+
+.browse__through:active
+  outline: none
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  border: 1px solid #ececec
+  background-color: #ffffff
+
+.down
+  margin-left: -5px
+  margin-top: -8px
+  padding: 0
+  position: absolute
+  z-index: 1
+  text-align: left
+
+.browse__through:focus .down
+  display: flex
+
+.browse__through:active .down
+  display: flex
+
+.browse__through:focus
+  outline: none
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  border: 1px solid #ececec
+  background-color: #ffffff
+
+.fa-caret-down
+  padding-left: 2px
+
+.search__item
+  border-radius: 0 3px 3px 0
+  border: 1px solid #e6e6e6
+  background-color: #ffffff
+  width: 317px
+  height: 36px
+  margin-left: -1px
+
+input[type="text"]
+  color: #a4a4a4
+  font-size: 14px
+  font-weight: 300
+  line-height: 32px
+  letter-spacing: 0.35px
+  padding-left: 15px
+  padding-right: 50px
+
+input[type="text"]:focus
+  font-size: 16px
+  color: #212121
+  font-weight: 300
+  background-color: #f8f8f8
+  outline: none
+
+.search__magnifier
+  border-radius: 0 3px 3px 0
+  border: 1px solid #e6e6e6
+  background-color: #ffffff
+  width: 40px
+  height: 38px
+  margin-left: -40px
+  outline: none
+
+.fa-search:hover,
+.fa-search:active
+  transform: scale(1.3)
+  outline: none
+
+.form
+  display: flex
+  align-items: center
+  margin-left: 37px
+
+.header__right
+  display: flex
+  align-items: center
+
+.logo__img
+  margin-right: 13px
+
+.logo__D
+  color: #f16d7f
+  font-weight: 400
+  letter-spacing: 0.68px
+
+.cart
+  margin-right: 26px
+
+.go__cart:hover
+  transform: scale(1.3)
+
+.button__pink
+  display: block
+  padding-left: 19px
+  height: 38px
+  background-color: #f16d7f
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  line-height: 38px
+  letter-spacing: 0.38px
+  text-decoration: none
+
+.button__pink .fa
+  padding: 0 12px
+
+.button__pink:hover
+  outline: 2px solid #a21b2d
+
+.button__pink:active
+  box-shadow: inset 0 0 12px 7px #a21b2d
+
+/*---------NAV---------------------*/
+
+.menu
+  display: flex
+  justify-content: center
+  list-style-type: none
+
+.menu__link
+  padding: 13px
+  display: block
+  color: #222222
+  font-size: 14px
+  font-weight: 700
+  line-height: 25px
+  text-transform: uppercase
+  text-decoration: none
+
+/*----------------Мега меню---------------------------*/
+.drop
+  border-radius: 5px
+  background-color: #ffffff
+  border: 1px solid #ececec
+  padding: 10px 20px
+  display: none
+  /*я не вижу*/
+  position: absolute
+  top: 43px
+
+.drop:before
+  content: ''
+  display: block
+  width: 10px
+  height: 10px
+  background-color: #fff
+  position: absolute
+  top: -6px
+  left: 31px
+  transform: rotate(45deg)
+  border-top: 1px solid #e8e8e8
+  border-left: 1px solid #e8e8e8
+
+.drop__h3
+  color: #232323
+  font-size: 14px
+  font-weight: 400
+  line-height: 32px
+  text-transform: uppercase
+  letter-spacing: 0.35px
+  border-bottom: 1px solid #e8e8e8
+  padding: 8px 0
+
+.drop__link
+  color: #646464
+  font-size: 14px
+  font-weight: 400
+  line-height: 28px
+  letter-spacing: 0.35px
+  text-decoration: none
+
+.drop__link:hover
+  color: #f16d7f
+
+.drop__menu
+  list-style-type: none
+
+.drop__flex
+  width: 235px
+  margin-right: 46px
+
+.drop__flex:last-of-type
+  margin-right: 0
+
+.drop__flex_img
+  width: 255px
+  float: right
+  margin-top: 15px
+  &:hover
+    outline: 2px solid #f16d7f
+
+.menu__list
+  position: relative
+
+.menu__list:hover .drop
+  display: flex
+  /*становится видимым*/
+  z-index: 1
+
+.menu__list:hover .down
+  display: none
+
+.menu__list:hover .menu__link
+  color: #ef5b70
+
+.drop_right
+  right: 10px
+
+.drop_right:before
+  left: auto !important
+  right: 40px
+
+.drop_center
+  right: -200px
+
+.drop_center:before
+  left: auto !important
+  right: 225px
+
+/*--------promo-----------------*/
+
+.promo
+  height: 614px
+  background-color: #e8e8e8
+
+.promo__content
+  height: 100%
+  background-image: url(img/promo.jpg)
+  background-position: 0 -51px
+
+.promo__text_big
+  font-size: 60px
+  letter-spacing: 1.5px
+  font-weight: 700
+  line-height: 44px
+  margin-bottom: 14px
+
+.promo__text_mini
+  letter-spacing: 1px
+  font-weight: 700
+  line-height: 34px
+
+.promo__text_lastW
+  color: #f16d7f
+
+.promo__text
+  border-left: 12px solid #f16d7f
+  color: #222222
+  font-size: 40px
+  text-transform: uppercase
+  padding-left: 12px
+  margin-top: 224px
+  float: left
+
+/*-------offer------------------*/
+
+.category__content_big
+  width: 560px
+  height: 542px
+  background-image: url(img/Layer_31.jpg)
+
+.category__content_mini
+  width: 560px
+  height: 261px
+  background-image: url(img/Layer_32.jpg)
+
+.category__content_big:first-child
+  background-image: url(img/Layer_30.jpg)
+  margin-right: 20px
+/*чтобы не съезжались правые и левые колонки при увеличении масштаба*/
+
+.category__content_mini:first-child
+  background-image: url(img/Layer_37.jpg)
+  margin-right: 20px
+
+.category__content
+  padding-top: 100px
+  padding-bottom: 100px
+
+.category
+  display: flex
+  justify-content: space-between
+
+.category__content div:first-child
+  margin-bottom: 20px
+
+.category__text
+  background-color: #ffffff
+  padding: 16px 20px
+  float: left
+  margin-top: 26px
+  color: #222222
+  font-size: 18px
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.45px
+
+.category__text p:last-child
+  color: #f16d7f
+  font-size: 30px
+  letter-spacing: 0.75px
+
+/*-----fetured__items_text------------------*/
+
+.featured__middleTitle
+  color: #222222
+  font-size: 30px
+  font-weight: 700
+  letter-spacing: 0.75px
+  text-align: center
+
+.featured__p
+  color: #9f9f9f
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0.35px
+  text-align: center
+  margin-top: 16px
+  margin-bottom: 60px
+
+/*------feature__product------------*/
+
+.item__product_name
+  color: #222222
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+  text-decoration: none
+
+.item__product_price
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  display: flex
+  justify-content: space-between
+  margin-top: 16px
+
+.item__product
+  margin-bottom: 39px
+  width: 263px
+  position: relative
+
+.item__product:hover
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+.item__product:hover .product__addCart, .product__like_1, .product__like_2
+  display: block
+
+.item__product:hover .stars
+  display: block
+
+.item__product:hover .product__img
+  filter: brightness(50%)
+
+.item__product_text
+  padding: 20px 14px
+
+.product__addCart
+  text-decoration: none
+  border-radius: 3px
+  border: 1px solid #ffffff
+  color: #ffffff
+  font-size: 13px
+  font-weight: 700
+  width: 106px
+  height: 37px
+  text-align: right
+  line-height: 39px
+  position: absolute
+  top: 98px
+  left: 70px
+  display: none
+  padding-right: 15px
+
+.product__addCart:hover
+  box-shadow: 0 0 5px #fff
+
+.product__img
+  width: 100%
+
+.stars
+  display: none
+
+.cartWhite
+  position: absolute
+  margin-top: 10px
+  margin-left: -30px
+
+.feature__product
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.browseAll__product
+  display: block
+  background-color: #f16d7f
+  width: 212px
+  height: 48px
+  text-align: center
+  text-decoration: none
+  line-height: 48px
+  color: #ffffff
+  font-size: 16px
+  font-weight: 700
+  letter-spacing: 0.4px
+  margin: 0 auto 113px
+
+.browseAll__product:hover
+  outline: 2px solid #a21b2d
+
+.browseAll__product:active
+  box-shadow: inset 0 0 12px 7px #a21b2d
+
+/*-------------feature----------------------*/
+
+.featured__left
+  height: 529px
+  width: 767px
+  background-image: url(img/ImageFeatured.jpg)
+  float: left
+
+.feature
+  margin-bottom: 97px
+  display: flex
+
+.featured__right
+  width: 373px
+  height: 529px
+  background-color: #222224
+
+.featured__left_text_big
+  color: #ffffff
+  font-size: 54px
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 1.5px
+
+.featured__left_text_mini
+  color: #ffffff
+  font-size: 32px
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.9px
+
+.promo__text_lastW
+  color: #f16d7f
+
+.featured__left_text
+  float: left
+  margin-left: 39px
+  margin-top: 146px
+
+.featured_promo
+  height: 98px
+  width: 100%
+  display: block
+  position: relative
+  margin-top: 29px
+  margin-bottom: 29px
+.featured_forma
+  position: absolute
+  margin-left: 36px
+
+.featured_promo h4
+  padding-left: 114px
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: 0.5px
+  margin-bottom: 14px
+
+.featured_promo p
+  color: #fbfbfb
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  letter-spacing: 0.35px
+  width: 219px
+  padding-left: 114px
+
+.featured__block
+  display: flex
+  flex-wrap: wrap
+  margin-top: 28px
+
+/*----------subscribe----------------------*/
+
+.subscribePromo
+  height: 438px
+  width: 1608px
+  margin: 0 auto
+  background-image: url(img/promo2.jpg)
+
+.subscribe_promo
+  margin: 0 auto
+
+.subscribe__left
+  width: 570px
+  height: 438px
+
+.subscribe__right
+  width: 570px
+  height: 438px
+
+.subscribe
+  display: flex
+
+.customer_forma
+  height: 83px
+  width: 83px
+
+.subscribe_customer p
+  color: #222224
+  font-size: 16px
+  font-style: italic
+  line-height: 26px
+  letter-spacing: 0.4px
+  width: 420px
+  margin-left: 111px
+  margin-bottom: 19px
+
+.subscribe_customer
+  margin-top: 111px
+
+.customer_forma
+  position: absolute
+
+.subscribe_customer h4
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
+  letter-spacing: 0.4px
+  line-height: 26px
+  margin-left: 111px
+
+.subscribe_customer h5
+  color: #222224
+  font-size: 12px
+  font-weight: 300
+  letter-spacing: 0.3px
+  line-height: 14px
+  margin-left: 111px
+
+.subscribe_customer .leaf
+
+  margin-top: 41px
+  margin-left: 111px
+
+.leaf li
+  float: left
+  list-style-type: none
+  height: 10px
+  width: 38px
+  margin-right: 13px
+
+.leaf li a
+  display: block
+  width: 38px
+  height: 4px
+  background-color: #d6d6d6
+
+.leaf li a:hover
+  transform: scale(1.3)
+  background-color: #f16d7f
+
+.subscribe_form h3
+  font-size: 24px
+  letter-spacing: 0.6px
+  line-height: 54px
+  text-transform: uppercase
+  color: #222224
+  font-weight: 400
+  margin-top: 148px
+
+.subscribe_form h4
+  color: #222224
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.35px
+  line-height: 24px
+  margin-bottom: 35px
+
+.subscribe_form
+  text-align: center
+
+.enter__email
+  border-radius: 23px 0 0 23px
+  border: 1px solid #e1e1e1
+  background-color: #e1e1e1
+  width: 286px
+  height: 46px
+  outline: none
+
+input[type="email"]
+  color: #222224
+  font-size: 14px
+  font-weight: 400
+  line-height: 46px
+  letter-spacing: 0.35px
+  padding-left: 28px
+  padding-right: 20px
+
+input[type="email"]:focus
+  outline: none
+  font-size: 16px
+
+.send__email
+  border-radius: 0 23px 23px 0
+  border: 1px solid #f16d7f
+  background-color: #f16d7f
+  outline: none
+  color: #ffffff
+  font-size: 14px
+  font-weight: 400
+  line-height: 46px
+  letter-spacing: 0.35px
+  width: 104px
+  margin-left: -4px
+
+.send__email:hover
+  border: 1px solid #a21b2d
+  outline: none
+
+.send__email:active
+  box-shadow: inset 0 0 12px 7px #a21b2d
+  outline: none
+
+/*-----------footer-----------------------*/
+
+.footer__top
+  height: 458px
+  display: flex
+
+.footer__bottom
+  height: 79px
+  background-color: #e6e6e6
+
+.all_rights
+  display: flex
+  justify-content: space-between
+  color: #7a7a7a
+  font-size: 16px
+  font-weight: 400
+  line-height: 32px
+  letter-spacing: 0.4px
+  padding-top: 24px
+
+.footer__bottom a
+  /*---------иконки---------*/
+  display: block
+  float: left
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  margin-left: 8px
+  text-align: center
+
+.footer__bottom a:hover
+  background-color: #f16d7f
+  -webkit-animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+  animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+
+@-webkit-keyframes rotate-vert-center 
+  0% 
+    -webkit-transform: rotateY(0)
+    transform: rotateY(0)
+  100% 
+    -webkit-transform: rotateY(360deg)
+    transform: rotateY(360deg)
+
+@keyframes rotate-vert-center 
+  0% 
+    -webkit-transform: rotateY(0)
+    transform: rotateY(0)
+  100% 
+    -webkit-transform: rotateY(360deg)
+    transform: rotateY(360deg)
+
+.iconAw
+  color: #b2b2b2
+
+.footer__bottom a:hover .iconAw
+  color: #ffffff
+
+.brand_brief
+  width: 531px
+  height: 418px
+  padding-top: 109px
+
+.brand_brief p
+  width: 427px
+  color: #898989
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  letter-spacing: 0.35px
+  margin-top: 22px
+
+.footer__menu h3
+  color: #f16d7f
+  font-size: 18px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
+  letter-spacing: 0.45px
+  margin-bottom: 24px
+
+.footer__menu
+  width: 227px
+  height: 400px
+  padding-top: 123px
+  display: flex
+  flex-direction: column
+
+.footer__menu a
+  color: #898989
+  font-size: 16px
+  font-weight: 400
+  line-height: 43px
+  letter-spacing: 0.4px
+  text-decoration: none
+
+.footer__menu a:hover
+  color: #000000
+
+/*---- singlePage slider-----------*/
+
+.imgSlider
+  height: 777px
+  border: 1px solid #eaeaea
+  background-color: #f7f7f7
+
+.slide1
+  width: 597px
+  height: 724px
+  margin-top: 11px
+
+.image__slider
+  display: flex
+  justify-content: space-between
+
+.slider__arrow_right,
+.slider__arrow_left
+  width: 47px
+  height: 47px
+  background-color: #d8d8d8
+  margin-top: 365px
+
+.slider__arrow_right:hover,
+.slider__arrow_left:hover
+  background-color: #f16d7f
+
+.slider__arrow_right:active,
+.slider__arrow_left:active
+  box-shadow: inset 0 0 12px 7px #a21b2d
+  outline: none
+
+.fa-angle-left,
+.fa-angle-right
+  color: #ffffff
+  margin: 6px 17px
+
+/*--------------product__description-------------*/
+
+.product__description
+  text-align: center
+  width: 1141px
+  height: 730px
+  margin-bottom: 120px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  position: relative
+  margin-top: -86px
+
+.line_description
+  width: 642px
+  height: 1px
+  border: 1px solid #eaeaea
+  background-color: #eaeaea
+  margin-left: 250px
+  margin-top: 40px
+
+.price__description
+  color: #ef5b70
+  font-size: 24px
+  font-weight: 700
+  line-height: 24px
+  margin-top: 37px
+
+.specific
+  color: #2f2f2f
+  margin-right: 44px
+
+.product__specific
+  color: #b9b9b9
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+  list-style-type: none
+  display: flex
+  justify-content: center
+  margin-left: 44px
+  margin-top: 28px
+
+.rating_stars
+  color: #f1b746
+  margin-top: 24px
+
+.text_descript
+  width: 618px
+  color: #5e5e5e
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  text-align: justify
+  margin-top: 26px
+  margin-left: 262px
+
+.product__description h2
+  color: #4d4d4d
+  font-size: 18px
+  font-weight: 400
+  line-height: 24px
+  text-transform: uppercase
+  margin-top: 17px
+
+.product__description h3
+  margin-top: 73px
+  color: #f16d7f
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+
+.product__description .leaf
+  margin-top: 15px
+  display: flex
+  justify-content: center
+  margin-left: 11px
+
+.description__filter
+  width: 538px
+  height: 63px
+  margin: 63px auto 28px
+  display: flex
+  &_sign
+    width: 143px
+    padding-right: 53px
+    & p
+      color: #2f2f2f
+      font-size: 14px
+      font-weight: 700
+      line-height: 11px
+      text-transform: uppercase
+      margin-bottom: 15px
+      text-align: left
+
+
+/*---------------временно----------*/
+.filt
+  background-color: #f7f6b1
+  border: 1px solid #4d4d4d
+  width: 143px
+  height: 35px
+/*--------------------------------------------------*/
+
+
+.description_product__addCart
+  text-decoration: none
+  border: 1px solid #ef5b70
+  background-color: #ffffff
+  width: 537px
+  height: 55px
+  text-align: center
+  margin: 0 auto
+  display: block
+
+.description_product__addCart span
+  color: #ef5b70
+  font-size: 16px
+  font-weight: 700
+  line-height: 55px
+  margin-left: 40px
+
+.description_product__addCart:hover
+  outline: 2px solid #a21b2d
+
+.description_product__addCart:hover .cartPink
+  transform: scale(1.3)
+
+.cartPink
+  margin-top: 16px
+  position: absolute
+
+.description_product__addCart:active
+  box-shadow: inset 0 0 12px 7px #a21b2d
+
+/*------------may__like--------------------------*/
+
+.may_like__middleTitle
+  color: #4d4d4d
+  font-size: 24px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+  margin-bottom: 72px
+  text-align: center
+
+.may_like__product
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.like__product_name
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase
+  text-decoration: none
+
+.like__product
+  margin-bottom: 39px
+  width: 263px
+  position: relative
+
+.like_product__img
+  width: 100%
+
+.stars
+  display: none
+
+.item__product_price
+  color: #f16d7f
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  display: flex
+  justify-content: space-between
+  margin-top: 16px
+
+.like__product:hover
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+.like__product:hover .stars
+  display: block
+
+.item__product_text
+  padding: 20px 14px
+
+/*------------------Breadcrumb-----------------------*/
+
+.breadcrumb
+  height: 148px
+  background-color: #f8f3f4
+  display: flex
+  align-items: center
+  &__smallNav
+    color: #636363
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    text-transform: uppercase
+  &__cont
+    display: flex
+    justify-content: space-between
+    & h4
+      color: #f16d7f
+      font-size: 24px
+      font-weight: 400
+      line-height: 24px
+      text-transform: uppercase
+
+.smallNav__text
+  text-decoration: none
+  &:hover
+    color: #f16d7f
+    font-weight: 700
+  &_last
+    text-decoration: none
+    color: #f16d7f
+    font-weight: 700
+
+  /*-----------------------Product--------------------*/
+
+.catalog
+  display: flex
+  justify-content: space-between
+  margin-top: 71px
+  &__sidebar
+    width: 243px
+  &__content
+    width: 848px
+    height: 1624px
+
+.catalog_details
+  margin-bottom: 18px
+  & summary
+    outline: none
+    border-left: solid 5px #ef5b70
+    border-bottom: solid 1px #e8e8e8
+    color: #ef5b70
+    font-size: 14px
+    font-weight: 700
+    line-height: 37px
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: row-reverse
+    padding-left: 11px
+  &_ul
+    list-style-type: none
+    margin: 9px 0 0 22px
+    & li a
+      text-decoration: none
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 400
+      line-height: 33px
+      &:hover
+        color: #ef5b70
+        font-weight: 700
+
+.catalog_details:hover
+  cursor: pointer
+
+.selectPrice
+  color: #6f6e6e
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  margin-top: 6px
+
+.topFilter
+  height: 165px
+  margin-bottom: 48px
+  &__sort
+    width: 846px
+    height: 50px
+    background-color: #f3f3f3
+  &__details
+    display: flex
+    margin-bottom: 38px
+    &_sign
+      width: 244px
+      padding-right: 56px
+      & p
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 700
+        line-height: 11px
+        text-transform: uppercase
+        margin-bottom: 25px
+        text-align: left
+
+.topFilter__temp
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 244px
+  height: 39px
+  & a
+    color: #6f6e6e
+    font-size: 15px
+    font-weight: 400
+    line-height: 26px
+    text-decoration: none
+    margin-top: -8px
+    margin-right: 15px
+    margin-bottom: 9px
+    &:hover
+      color: #ef5b70
+                  /*флажки размеров*/
+.check_size
+  display: flex
+  flex-wrap: wrap
+  & div
+    width: 61px
+    margin-top: -4px
+    margin-bottom: 10px
+    & label
+      color: #6f6e6e
+      font-family: 'Open Sans', sans-serif
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+      text-transform: uppercase
+      padding-left: 6px
+
+/*переношу стандартные флажки куда подальше*/
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked)
+  position: absolute
+  left: -5000px
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label
+  display: inline-block
+  position: relative
+  padding-left: 23px
+  line-height: 15px
+  cursor: pointer
+/*перед метками делаю квадратики*/
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before
+  content: ""
+  position: absolute
+  left: 0
+  top: 0
+  width: 13px
+  height: 13px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+/*делаю галочки*/
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after
+  content: ""
+  position: absolute
+  -webkit-transition: all 0.2s ease
+  -moz-transition: all 0.2s ease
+  -o-transition: all 0.2s ease
+  transition: all 0.2s ease
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after
+  left: 3px
+  top: 4px
+  width: 7px
+  height: 4px
+  border-radius: 1px
+  border-left: 2px solid #4d4d4d
+  border-bottom: 2px solid #4d4d4d
+  -webkit-transform: rotate(-45deg)
+  -moz-transform: rotate(-45deg)
+  -o-transform: rotate(-45deg)
+  -ms-transform: rotate(-45deg)
+  transform: rotate(-45deg)
+/*выключаю галочки*/
+input[type="checkbox"]:not(:checked) + label:after
+  opacity: 0
+
+input[type="checkbox"]:checked + label:after
+  opacity: 1
+
+.double_slider
+  height: 14px
+  width: 244px
+
+.topFilter__sort
+  display: flex
+  align-items: center
+
+.button__sort, .name_sort
+  display: block
+  padding-left: 12px
+  height: 30px
+  background-color: #ffffff
+  border: 1px solid #ebebeb
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 30px
+  text-decoration: none
+
+.name_sort
+  padding-right: 12px
+  margin-left: 10px
+
+.button__sort .fa
+  padding: 0 12px
+
+.featureBox
+  height: 341px
+  width: 1608px
+  margin: 0 auto
+  background-color: #222224
+  &__numb
+    color: #fbfbfb
+    width: 309px
+    text-align: center
+    & h4
+      font-size: 20px
+      font-weight: 700
+      letter-spacing: 0.5px
+      margin-top: 32px
+    & p
+      font-size: 14px
+      font-weight: 300
+      line-height: 23.95px
+      margin-top: 17px
+
+.box
+  display: flex
+  justify-content: space-between
+
+.box_form
+  height: 40px
+  margin-top: 89px
+
+.catalog__view
+  display: flex
+  justify-content: space-between
+  height: 44px
+  &_all
+    color: #ef5b70
+    font-size: 16px
+    font-weight: bold
+    line-height: 26px
+    width: 150px
+    height: 44px
+    border-radius: 3px
+    border: 1px solid #ef5b70
+    background-color: #ffffff
+    outline: none
+    &:hover
+      outline: none
+      cursor: pointer
+    &:active
+      outline: none
+      box-shadow: inset 0 0 12px 7px #a21b2d
+  &_pag
+    width: 261px
+    height: 44px
+    background-color: #ceefd7
+
+.catalog__view_pagination
+  width: 261px
+  height: 44px
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  color: #c4c4c4
+
+.view_pagination
+  padding-left: 4px
+  & a
+    color: #c4c4c4
+    text-decoration: none
+    font-size: 16px
+    font-weight: 400
+    line-height: 44px
+    padding: 7px
+    &:hover
+      color: #ef5b70
+
+.angele_pagination .fa
+  font-size: 18px
+  color: #aaaaaa
+  margin: 0
+  font-weight: 700
+  &:hover
+    color: #ef5b70
+
+.product__like_1,
+.product__like_2
+  border: 1px solid #ffffff
+  border-radius: 3px
+  color: #ffffff
+  width: 57px
+  text-align: center
+  line-height: 37px
+  position: absolute
+  display: none
+
+.product__like
+  &_1
+    top: 145px
+    left: 70px
+    &:hover
+      box-shadow: 0 0 5px #fff
+  &_2
+    top: 145px
+    left: 134px
+    &:hover
+      box-shadow: 0 0 5px #fff
+
+.item__product:hover .product__like
+  &_1
+    display: block
+  &_2
+    display: block
+
+/*----------checkout----*/
+
+.checkout__page
+  margin-bottom: 93px
+
+.checkout__list
+  border-bottom: 1px solid #e8e8e8
+  & h2
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 72px
+
+.checkout__list_hidden_left,
+.checkout__list_hidden_right
+  padding-left: 35px
+  width: 532px
+  /*background-color: #f7f6b1*/
+  /*border: 1px solid #4a4a4a*/
+  & h3
+    color: #222222
+    font-size: 13px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 33px
+    margin-bottom: 15px
+  & p
+    color: #b3b2b2
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+    margin-bottom: 34px
+  & h5
+    color: #b3b2b2
+    font-size: 13px
+    font-weight: 400
+    line-height: 25px
+  & button
+    width: 180px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 38px
+    margin-bottom: 79px
+
+.contButton:active
+  box-shadow: inset 0 0 12px 7px #ef5b70
+  outline: 2px solid #ef5b70
+
+.contButton:hover
+  color: #ef5b70
+  cursor: pointer
+  transition: .2s
+
+.contButton:focus
+  outline: none
+
+.checkRadio
+  z-index: -1
+  opacity: 0
+  position: absolute
+  margin: 10px 0 0 7px
+
+.checkRadio + label
+  color: #222222
+  font-size: 12px
+  font-weight: 700
+  text-transform: uppercase
+  position: relative
+  padding: 0 0 0 28px
+  &:hover
+    color: #ef5b70
+    cursor: pointer
+
+.checkRadio + label:before
+  content: ''
+  position: absolute
+  top: -1px
+  left: 0
+  width: 12px
+  height: 12px
+  border: 2px solid #555555
+  border-radius: 50%
+  background: #ffffff
+
+.checkRadio + label:after
+  content: ''
+  position: absolute
+  top: 3px
+  left: 4px
+  width: 8px
+  height: 8px
+  border-radius: 50%
+  background: #555555
+  opacity: 0
+  transition: 0.2s
+
+.checkRadio:checked + label:after
+  opacity: 1
+
+.checkRadio:focus + label:before
+  box-shadow: 0 0 0 2px rgba(155, 162, 156, 0.2)
+.radioCheckbox1
+  margin-top: 24px
+
+.radioCheckbox2
+  margin-top: 10px
+
+.checkout__list_hidden
+  display: none
+
+.checkout__list:focus-within .checkout__list_hidden,
+.checkout__list:hover .checkout__list_hidden
+  display: flex
+  justify-content: space-between
+  outline: none
+
+.checkout__email
+  width: 342px
+  height: 45px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  padding-left: 20px
+  padding-right: 20px
+  margin-top: 10px
+  margin-bottom: 23px
+
+.checkout__password
+  width: 350px
+  height: 45px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  padding-left: 28px
+  padding-right: 20px
+  margin-top: 10px
+  margin-bottom: 23px
+  &:focus
+    outline: none
+
+.checkout__list_hidden_right
+  & h5
+    color: #ff0d0d
+    font-size: 13px
+    font-weight: 700
+    line-height: 15px
+  & h4
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+  & a
+    color: #222222
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    text-decoration: none
+    margin-left: 32px
+    &:hover
+      color: #ef5b70
+      font-weight: 700
+
+.red_st
+  color: #ff0d0d
+  font-size: 16px
+
+/*----------shoppingCart-------*/
+
+.cart__content
+  margin-top: 90px
+  margin-bottom: 80px
+
+.table_head_left h3,
+.table_head_right h3
+  color: #222222
+  font-size: 13px
+  font-weight: 700
+  line-height: 13px
+  text-transform: uppercase
+
+.table_head
+  border-bottom: 1px solid #eaeaea
+  display: flex
+  justify-content: space-between
+  height: 32px
+  &_right
+    display: flex
+    justify-content: space-between
+    width: 620px
+
+.cart__content_list
+  display: flex
+  justify-content: space-between
+  height: 162px
+  border-bottom: 1px solid #eaeaea
+  align-items: center
+  &_left
+    display: flex
+    & img
+      margin-right: 21px
+  &_right
+    display: flex
+    justify-content: space-between
+    margin-right: 20px
+    width: 575px
+    & h4
+      color: #656565
+      font-size: 13px
+      font-weight: 400
+      text-transform: uppercase
+    & a
+      color: #c0c0c0
+      font-size: 16px
+      font-weight: 400
+      margin-top: -2px
+    & a:hover
+      color: #ef5b70
+      transform: scale(1.2)
+
+.cart__content_list_product h4
+  color: #222222
+  margin-top: 13px
+  margin-bottom: 30px
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+
+.cart__content_list_product h5
+  color: #575757
+  font-weight: 400
+  font-size: 13px
+  line-height: 20px
+
+.product_cart
+  color: #6f6e6e
+  font-size: 13px
+  font-weight: 300
+  line-height: 20px
+
+
+input[type="text"].product__quantity
+  color: #656565
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+  width: 54px
+  height: 30px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  padding: 0
+  margin-top: -6px
+  text-align: center
+
+.butt_shopping_cart
+  display: flex
+  justify-content: space-between
+  & a
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    width: 235px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    text-decoration: none
+    line-height: 50px
+    text-align: center
+    margin-top: 44px
+    margin-bottom: 63px
+
+.total
+  display: flex
+  justify-content: space-between
+
+.grand_total
+  width: 360px
+  height: 214px
+  background-color: #f5f3f3
+
+.shipping_address
+  width: 356px
+  height: 268px
+
+.coupon_discount
+  width: 356px
+
+.grand_total_block
+  width: 273px
+  height: 132px
+  margin-left: 44px
+  margin-top: 41px
+  & a
+    display: block
+    color: #ffffff
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    text-decoration: none
+    line-height: 50px
+    text-align: center
+    width: 273px
+    height: 50px
+    background-color: #f16d7f
+    margin-top: 17px
+  & p
+    text-align: right
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 14px
+  & h3
+    text-align: right
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 22px
+  & div
+    border-bottom: 1px solid #e2e2e2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
